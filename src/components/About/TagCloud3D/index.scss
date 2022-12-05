@@ -1,0 +1,18 @@
+.content {
+  color: var(--main-header-color);
+  font-size: 1.31em;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 450px) {
+  .About {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    font-size: 1.3rem;
+    // font-weight: 500;
+  }
+}

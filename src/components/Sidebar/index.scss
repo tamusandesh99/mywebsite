@@ -1,0 +1,30 @@
+.nav-bar {
+  width: 10%;
+  position: fixed;
+  top: 90%;
+  left:1%;
+  z-index: 3;
+  // min-height: 100vh;
+  
+  svg{
+    color: rgb(128, 124, 124);
+    margin-bottom: 7%;
+    height: 2vh;
+  }
+  
+  ul {
+    // border: 1px solid red;
+    list-style: none;
+    // text-align: center;
+
+    :hover svg {
+      color: var(--main-header-color);
+    }
+  }
+
+  li {
+    a {
+      font-size: 150%;
+    }
+  }
+}

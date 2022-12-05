@@ -1,0 +1,110 @@
+.flat-button {
+  color: var(--main-header-color);
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 1em 1.8em;
+  border: 1px solid var(--main-header-color);
+  // margin-top: 25px;
+  // float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+
+  &:hover {
+    background: var(--main-header-color) !important;
+    color: #333;
+  }
+}
+
+.container-home-page {
+  margin-left: 1em;
+  max-width: 70%;
+  margin-top: 15em;
+  // margin-bottom: 15em;
+  .text-zone {
+    position: relative;
+  }
+  
+  h1 {
+    // border: 1px solid red;
+    color: var(--paragraph-color);
+    // font-size: 5.5em;
+    font-size:7.5rem;
+    line-height: 100%;
+    font-family: 'Bookman';
+    font-weight: 900;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: var(--main-header-color);
+      font-size: 0.3em;
+      position: absolute;
+      margin-top: -3em;
+      left: -0.5em;
+      opacity: 0.6;
+    }
+
+    &:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: var(--main-header-color);
+      font-size: 0.3em;
+      position: absolute;
+      margin-left: -0.5em;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+      margin-top: -1em;
+    }
+
+    img {
+      margin-left: 1rem;
+      opacity: 0;
+      width: 32px;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 2em;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  //Mobile sizes
+  @media (max-width: 640px) {
+    max-width: 100%;
+    margin-top: -5em;
+    margin-left: 0;
+    h1{
+      color: #fff;
+      font-size: 4.5rem;
+    }
+    h2 {
+      color: #8d8d8d;
+      margin-top: 1em;
+      font-weight: 400;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      letter-spacing: 0.1em;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  }
+  @media (max-width: 400px) {
+    h1{
+      font-size: 4rem;
+      // width: 75%;
+    }
+    
+  }
+
+}
+

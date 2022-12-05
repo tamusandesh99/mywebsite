@@ -1,0 +1,33 @@
+
+.about-page{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  h1 {
+    padding-bottom: 0.2em;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: 5em;
+  }
+}
+
+.text-zone-about{
+  font-size: 1.31em;
+  font-family: 'American Tyewriter';
+  color: var(--paragraph-color);
+}
+
+@media screen and (max-width: 760px) {
+
+  .about-page{
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  p{
+    line-height: 1.2;
+    margin: auto;
+    width: 90%;
+    text-align: left;
+  }
+}

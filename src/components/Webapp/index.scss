@@ -1,0 +1,118 @@
+
+.typing-zone-webapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 90vh;
+    max-width: 90vw;
+    margin: auto;
+    font-size: 1.3125rem;
+    margin-top: 10%;
+    //background-image: url(../images/background9.jpg);
+}
+
+
+.typing {
+    background: #30241f;
+    width: 80%;
+    min-height: 10em;
+    // border: 1px solid rgb(142, 138, 138);
+    box-shadow: 0 0 0.6em rgb(194, 192, 192);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(7.5px);
+    color: rgb(244, 235, 235);
+    padding: 2vh;
+    opacity: 0;
+    animation: fadeInUp 2s 1s;
+    animation-fill-mode: forwards;
+}
+
+.wrong-char-div{
+    animation: horizontal-shaking 0.5;
+    background-color: red;
+}
+
+.timer {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    color: #c7c5c5;
+    opacity: 0;
+    animation: fadeInUp 2s 1s;
+    animation-fill-mode: forwards;
+}
+
+.given-quote {
+    margin-bottom: 1em;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 1.7rem;
+    opacity: 0;
+    animation: fadeInUp 2s 1s;
+    animation-fill-mode: forwards;
+}
+ 
+.quote-typed {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 2px solid rgb(66, 66, 66);
+    height: 13vh;
+    max-height: 25vh;
+    width: 100%;
+    margin: auto;
+    resize: none;
+    padding: 0.5em 0em .5em 0.5em;
+    font-size: 1.7rem;
+    opacity: 0;
+    animation: fadeInUp 2s 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.quote-typed:focus {
+    border-color: rgb(143, 136, 143);
+}
+
+@media(max-width: 460px) {
+    .projects {
+        padding: 2vh;
+    }
+}
+
+
+.typing-result {
+    margin: 1.2vh 0 0 0;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    font-weight: 0px;
+}
+
+.result>h {
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+}
+
+.outgoing-char{
+    color: gold;
+}
+
+.current-char{
+    opacity: 0;
+    animation: fadeInDown 3s 1s;
+    animation-fill-mode: forwards;
+    transform: translateZ(0);
+    color: black;
+    font-weight: bold;
+    background-color: rgb(186, 192, 196);
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }

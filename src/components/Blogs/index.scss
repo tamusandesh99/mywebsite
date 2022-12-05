@@ -1,0 +1,125 @@
+.blog-component {
+  h1 {
+    padding-bottom: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+  }
+  .blog-title {
+    p {
+      width: 65%;
+      // margin-left: 1.5em;
+      margin-bottom: 2em;
+      line-height: 1.8rem;
+      font-family: 'American Typerwriter';
+      text-align: left;
+      font-size: 1.71rem;
+    }
+  }
+  .blog-table-cell {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+    display: grid;
+    justify-items: center;
+    padding: 1em;
+    margin-bottom: 3em;
+  }
+
+  .one {
+    border-top: 1px solid red;
+    box-shadow: rgba(154, 33, 33, 0.35) 0px 12px 10px 0px;
+    button {
+      transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      &:hover {
+        color: rgb(129, 16, 16);
+      }
+    }
+  }
+  .two {
+    border-top: 1px solid blue;
+    box-shadow: rgba(37, 24, 139, 0.35) 0px 12px 10px 0px;
+    button {
+      transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      &:hover {
+        color: rgb(89, 13, 175);
+      }
+    }
+  }
+  .three {
+    border-top: 1px solid green;
+    box-shadow: rgba(25, 146, 72, 0.35) 0px 12px 10px 0px;
+
+    button {
+      transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      &:hover {
+        color: rgb(14, 71, 22);
+      }
+    }
+  }
+  .blogs-table{
+    width: min(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .single-blog {
+      margin: auto;
+      width: 100%;
+      padding: 0.5em;
+      height: 20vh;
+      // background-color: red;
+      // border: 1px solid green;
+    }
+  }
+
+  button {
+    background-color: inherit;
+    color: white;
+    border: 0;
+    font-size: 2.5rem;
+    font-family: 'American Typewriter';
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Didot, serif';
+  }
+  h1 {
+    color: var(--main-header-color);
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 640px) {
+    
+    .blogs-table{
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .blog-title {
+      p {
+        width: 100%;
+      }
+    }
+    button {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .blog-title {
+      p {
+        line-height: 1.2;
+        margin: auto;
+        width: 90%;
+        text-align: left;
+        margin-bottom: 2em;
+      }
+    }
+  }
+
+}
