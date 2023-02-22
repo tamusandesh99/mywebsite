@@ -1,12 +1,9 @@
 import React from 'react'
 import './index.scss'
-import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import Popup from './Popup'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import libre from '../../assets/projects-images/GuestInfo.jpg'
-import myWeb from '../../assets/projects-images/myweb.png'
 import { useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -37,6 +34,11 @@ const Projects = () => {
   //navigate to typing webapp
   const navigateTyping = () => {
     navigate('/webapp')
+  }
+
+  //navigate to guest info
+  const navigatePantry = () =>{
+    navigate('/pantry')
   }
 
   //open tab
@@ -84,6 +86,7 @@ const Projects = () => {
       setIsHoveringWeb(false)
     }
   }
+
 
   return (
     <>
@@ -195,7 +198,6 @@ const Projects = () => {
             </button>
           </div>
         </div>
-
       </div>
     </>
   )

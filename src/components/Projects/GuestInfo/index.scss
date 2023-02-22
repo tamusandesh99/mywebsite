@@ -1,0 +1,52 @@
+.guestInfo{
+    display: grid;
+    place-items: center;
+    width: 60vw;
+    height: 80vh;
+    // border: 1px solid red;
+    margin: auto;
+
+    .inner-blue{
+        display: grid;
+        place-items: center;
+        width: 50vw;
+        height: 70vh;
+        // border: 1px solid blue;
+    }
+
+    .inner-yellow{
+        display: grid;
+        place-items: center;
+        width: 40vw;
+        height: 60vh;
+        border: 1px solid rgba(240, 242, 248, 0.651);
+        background-color: rgb(37, 37, 37);
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    input{
+        height: 2.23vh;
+        font-size: 15px;
+    }
+
+    button{
+        font-weight: 800;
+        color: rgb(229, 229, 238);
+        background-color: blue;
+        width: 6vw;
+        height: 3vh;
+
+        
+    }
+    .submit{
+        background-color: yellowgreen;
+        color: rgb(19, 19, 20);
+    }
+
+    .center-content{
+        line-height: 25px;
+    }
+}

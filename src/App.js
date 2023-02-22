@@ -6,6 +6,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Webapp from './components/Webapp'
 import Terminal from './components/Terminal'
+import GuestInfo from './components/Projects/GuestInfo'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/terminal" element={<Terminal />} />
         <Route path="/webapp" element={<Webapp />} />
+        <Route path="/pantry" element={<GuestInfo />} />
 
         <Route path="/*" element={<Layout />}>
           <Route index element={<Home />} />
