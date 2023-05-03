@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
-const Projects = () => {
+const Projects = ({ turnMusicOff }) => {
   //Set Popup image on click
   const [closeBtn, setCloseBtn] = useState(false)
   const [showImage, setShowImage] = useState()
@@ -29,6 +29,7 @@ const Projects = () => {
   let navigate = useNavigate()
   const nagivateTerminal = () => {
     navigate('/terminal')
+    turnMusicOff()
   }
 
   //navigate to typing webapp

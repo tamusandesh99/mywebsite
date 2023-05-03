@@ -17,6 +17,9 @@ import music from '../../assets/projects-images/music.mp3'
 const Layout = () => {
   let navigate = useNavigate()
   const nagivateTerminal = () => {
+    setOnOff('OFF')
+    setMusicDiv('music-off-color')
+    song.pause()
     if (window.innerWidth < 450) {
       console.log('ok')
     } else {
@@ -37,6 +40,17 @@ const Layout = () => {
       setOnOff('OFF')
       setMusicDiv('music-off-color')
       song.pause()
+    }
+  }
+
+  const turnMusicOff = () =>{
+    if(onOff == 'ON'){
+      setOnOff('OFF')
+      setMusicDiv('music-off-color')
+      song.pause()
+    }
+    else{
+      console.log('music is off')
     }
   }
 
@@ -120,7 +134,7 @@ const Layout = () => {
         </Slide>
         <Slide triggerOnce direction="left" duration={1500}>
           <div className="components">
-            <Projects />
+          <Projects turnMusicOff={turnMusicOff} />
           </div>
         </Slide>
         <Slide triggerOnce direction="left" duration={1500}>
