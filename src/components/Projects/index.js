@@ -132,7 +132,7 @@ const Projects = () => {
             onMouseOut={() => handleMouseOut('cafe')}
           >
             {' '}
-            <button onClick={(e) => popup('cafe')}>
+            <button onClick={(e) => openInNewTab('https://github.com/tamusandesh99/TwitchBot')}>
               {/* <p>Cafe Website</p> */}
               {isHoveringCafe && (
                 <div className="project-hover-div">Click Me</div>

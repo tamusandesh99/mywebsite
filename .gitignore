@@ -22,3 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 
 /public/index.html
+package-locl.json
+/src/firebase-config.js
