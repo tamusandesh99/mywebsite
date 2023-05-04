@@ -68,7 +68,7 @@ const sendEmail = (e) => {
                 </li> 
                 <li>
                   <textarea
-                    placeholder="Message (or your favorite TV shows)"
+                    placeholder="Send me a message"
                     name="message"
                     required
                   ></textarea>
