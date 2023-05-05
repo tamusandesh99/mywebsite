@@ -1,9 +1,7 @@
 import { useState, useEffect,useRef } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import form from 'react'
 import emailjs from '@emailjs/browser'
 import './index.scss'
-import Loader from 'react-loaders'
 
 const Contact = () => {
   const contactMe = ['G','e','t', ' ', 'I','n', ' ', 'T','o','u','c','h']
