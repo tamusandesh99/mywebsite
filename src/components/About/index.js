@@ -56,6 +56,7 @@ const About = () => {
             the opportunity to work with the latest technologies on challenging
             and diverse projects.
           </p>
+          
         </div>
         <div className="sphere">
           <TagCloud3D />
