@@ -9,7 +9,7 @@ import Sidebar from '../Sidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
-import { Slide, Bounce, Hinge, JackInTheBox, Roll } from 'react-awesome-reveal'
+import { Slide } from 'react-awesome-reveal'
 import { GrSoundcloud } from 'react-icons/gr'
 import { useState, useRef, useEffect } from 'react'
 import music from '../../assets/projects-images/music.mp3'
@@ -44,7 +44,7 @@ const Layout = () => {
   }
 
   const turnMusicOff = () =>{
-    if(onOff == 'ON'){
+    if(onOff === 'ON'){
       setOnOff('OFF')
       setMusicDiv('music-off-color')
       song.pause()
