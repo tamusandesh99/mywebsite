@@ -117,7 +117,7 @@ const Layout = () => {
           <Sidebar />
         </div>
 
-        <div className="components">
+        <div className="components home">
           <Home />
           <span onClick={scrollContact} className="flat-button">
             CONTACT ME
