@@ -1,8 +1,5 @@
 import { useEffect, useState,useRef } from 'react'
-import { Link, Routes, Route } from 'react-router-dom'
-import Loader from 'react-loaders'
 import Logotitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import MouseTrail from "@pjsalita/react-mouse-trail"
