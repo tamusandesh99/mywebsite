@@ -29,18 +29,22 @@ const Webapp = () => {
   const [changeQuote, setChangeQuote] = useState(false)
 
   useEffect(() => {
-    try{
-      axios.get(url).then((response) => {
-        const apiQuote = response.data
-        setQuote(apiQuote.content)
-        console.log("API is up - Sandesh Gurung")
-      })
+    const fetchQuote = async () => {
+      try {
+        const response = await axios.get('https://api.quotable.io/random');
+        setQuote(response.data.content);
+        console.log("API is up - Sandesh Gurung");
+      } catch (error) {
+        console.log("API is down");
+        setQuote(temporaryQuote());
+      }
+    };
+
+    if (changeQuote) {
+      fetchQuote();
+      setChangeQuote(false); // Reset changeQuote after fetching
     }
-    catch(e){
-        console.log("API is down")
-        setQuote(temporaryQuote())
-    }
-  }, [changeQuote])
+  }, [changeQuote]);
 
   let randomQuote = quote
   const [userValue, setUserValue] = useState(' ')
@@ -73,7 +77,7 @@ const Webapp = () => {
       setUserValue(userValue + currentChar)
       updatedOutgoingChars += currentChar
       setOutgoingChars(updatedOutgoingChars)
-      setChangeQuote(false)
+
       //5
       setCurrentChar(incomingChars.charAt(0))
       

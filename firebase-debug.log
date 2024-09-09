@@ -1,0 +1,39 @@
+[debug] [2024-09-09T03:42:05.867Z] ----------------------------------------------------------------------
+[debug] [2024-09-09T03:42:05.869Z] Command:       /usr/local/bin/firebase /Users/sandeshgrg75/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2024-09-09T03:42:05.869Z] CLI Version:   10.1.3
+[debug] [2024-09-09T03:42:05.869Z] Platform:      darwin
+[debug] [2024-09-09T03:42:05.869Z] Node Version:  v12.18.1
+[debug] [2024-09-09T03:42:05.874Z] Time:          Sun Sep 08 2024 23:42:05 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-09T03:42:05.874Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-09T03:42:05.921Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-09T03:42:05.921Z] > authorizing via signed-in user (tamusandesh99@gmail.com)
+[debug] [2024-09-09T03:42:05.921Z] [iam] checking project react-web-blog for permissions ["firebase.projects.get"]
+[debug] [2024-09-09T03:42:05.923Z] > refreshing access token with scopes: []
+[debug] [2024-09-09T03:42:05.923Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-09-09T03:42:06.150Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 09 Sep 2024 03:42:06 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-09-09T03:42:06.158Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-web-blog:testIamPermissions [none]
+[debug] [2024-09-09T03:42:06.158Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-web-blog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-09T03:42:06.443Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-web-blog:testIamPermissions 200
+[debug] [2024-09-09T03:42:06.444Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-web-blog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-09T03:42:06.445Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog [none]
+[debug] [2024-09-09T03:42:06.872Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog 200
+[debug] [2024-09-09T03:42:06.873Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog {"projectId":"react-web-blog","projectNumber":"1059208656849","displayName":"react-web-blog","name":"projects/react-web-blog","resources":{"hostingSite":"react-web-blog"},"state":"ACTIVE","etag":"1_881cc292-8a8f-4179-b151-f1b53390d4a2"}
+[info] 
+[info] === Serving from '/Users/sandeshgrg75/Desktop/codingDump/reactBlog/react-web-app'...
+[info] 
+[debug] [2024-09-09T03:42:06.876Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-web-blog/sites 
+[debug] [2024-09-09T03:42:07.361Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-web-blog/sites 200
+[debug] [2024-09-09T03:42:07.361Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/react-web-blog/sites {"sites":[{"name":"projects/react-web-blog/sites/react-web-blog","defaultUrl":"https://react-web-blog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-09-09T03:42:07.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog/webApps/-/config [none]
+[debug] [2024-09-09T03:42:07.915Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog/webApps/-/config 200
+[debug] [2024-09-09T03:42:07.915Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-web-blog/webApps/-/config {"projectId":"react-web-blog","appId":"1:1059208656849:web:03f84344d38edb23d052f0","storageBucket":"react-web-blog.appspot.com","apiKey":"AIzaSyD5eZf91lgyZR7LStOp9Y_CQlS_RB8pKDI","authDomain":"react-web-blog.firebaseapp.com","messagingSenderId":"1059208656849","measurementId":"G-T2RERM6XV0"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] "GET /webapp HTTP/1.1" 200 1181 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] \"GET /webapp HTTP/1.1\" 200 1181 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] "GET /static/css/main.29422120.css HTTP/1.1" 200 110815 "http://localhost:5000/webapp" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] \"GET /static/css/main.29422120.css HTTP/1.1\" 200 110815 \"http://localhost:5000/webapp\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] "GET /static/js/main.cd532f3b.js HTTP/1.1" 200 398428 "http://localhost:5000/webapp" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:15 +0000] \"GET /static/js/main.cd532f3b.js HTTP/1.1\" 200 398428 \"http://localhost:5000/webapp\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:16 +0000] "GET /favicon.ico?v=2 HTTP/1.1" 200 8007 "http://localhost:5000/webapp" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:16 +0000] \"GET /favicon.ico?v=2 HTTP/1.1\" 200 8007 \"http://localhost:5000/webapp\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:16 +0000] "GET /logo192.png HTTP/1.1" 200 1181 "http://localhost:5000/webapp" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:16 +0000] \"GET /logo192.png HTTP/1.1\" 200 1181 \"http://localhost:5000/webapp\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Sep/2024:03:42:19 +0000] "GET /static/js/main.cd532f3b.js.map HTTP/1.1" 200 3821319 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Sep/2024:03:42:19 +0000] \"GET /static/js/main.cd532f3b.js.map HTTP/1.1\" 200 3821319 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0\""}}
