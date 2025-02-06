@@ -5,7 +5,7 @@ import Popup from './Popup'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../V1.0/AnimatedLetters'
 
 const Projects = ({ turnMusicOff }) => {
   //Set Popup image on click
@@ -38,7 +38,7 @@ const Projects = ({ turnMusicOff }) => {
   }
 
   //navigate to guest info
-  const navigatePantry = () =>{
+  const navigatePantry = () => {
     navigate('/pantry')
   }
 
@@ -88,7 +88,6 @@ const Projects = ({ turnMusicOff }) => {
     }
   }
 
-
   return (
     <>
       <div className="projects-component">
@@ -133,7 +132,11 @@ const Projects = ({ turnMusicOff }) => {
             onMouseOut={() => handleMouseOut('cafe')}
           >
             {' '}
-            <button onClick={(e) => openInNewTab('https://github.com/tamusandesh99/TwitchBot')}>
+            <button
+              onClick={(e) =>
+                openInNewTab('https://github.com/tamusandesh99/TwitchBot')
+              }
+            >
               {/* <p>Cafe Website</p> */}
               {isHoveringCafe && (
                 <div className="project-hover-div">Click Me</div>

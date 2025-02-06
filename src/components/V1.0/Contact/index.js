@@ -1,10 +1,10 @@
-import { useState, useEffect,useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import './index.scss'
 
 const Contact = () => {
-  const contactMe = ['G','e','t', ' ', 'I','n', ' ', 'T','o','u','c','h']
+  const contactMe = ['G', 'e', 't', ' ', 'I', 'n', ' ', 'T', 'o', 'u', 'c', 'h']
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
@@ -14,11 +14,16 @@ const Contact = () => {
     }, 4000)
   }, [])
 
-const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_ofspfnf', 'template_dgx5d98', form.current, 'LZgNoXXq4UtBHMbTS')
+      .sendForm(
+        'service_ofspfnf',
+        'template_dgx5d98',
+        form.current,
+        'LZgNoXXq4UtBHMbTS'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -41,12 +46,20 @@ const sendEmail = (e) => {
               idx={5}
             />
           </h1>
-          <p>Im interested in any freelance opportunities. If not send your anonymous message. A feedback on my website would be wonderful.</p>
+          <p>
+            Im interested in any freelance opportunities. If not send your
+            anonymous message. A feedback on my website would be wonderful.
+          </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="user_name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="user_name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
@@ -63,7 +76,7 @@ const sendEmail = (e) => {
                     name="subject"
                     required
                   />
-                </li> 
+                </li>
                 <li>
                   <textarea
                     placeholder="Send me a message"
@@ -72,9 +85,7 @@ const sendEmail = (e) => {
                   ></textarea>
                 </li>
                 <li>
-
                   <input type="submit" className="flat-button" value="SEND" />
-
                 </li>
               </ul>
             </form>

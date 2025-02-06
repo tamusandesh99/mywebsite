@@ -1,5 +1,5 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../V1.0/AnimatedLetters'
 import { useEffect, useState } from 'react'
 import TagCloud3D from './TagCloud3D/TagCloud3D'
 
@@ -56,7 +56,6 @@ const About = () => {
             the opportunity to work with the latest technologies on challenging
             and diverse projects.
           </p>
-          
         </div>
         <div className="sphere">
           <TagCloud3D />

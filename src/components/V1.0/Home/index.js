@@ -1,12 +1,12 @@
-import { useEffect, useState,useRef } from 'react'
-import Logotitle from '../../assets/images/logo-s.png'
+import { useEffect, useState, useRef } from 'react'
+import Logotitle from '../../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import MouseTrail from "@pjsalita/react-mouse-trail"
+import MouseTrail from '@pjsalita/react-mouse-trail'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['a', 'n', 'd', 'e', 's', 'h',',']
+  const nameArray = ['a', 'n', 'd', 'e', 's', 'h', ',']
   const jobArray = [
     'F',
     'u',
@@ -38,10 +38,10 @@ const Home = () => {
     'e',
     'r',
   ]
-  
+
   //mouse trail
   const config = {
-    color: "#0fab74",
+    color: '#0fab74',
     idleAnimation: false,
     idleAnimationCount: 10,
     inverted: false,
@@ -50,12 +50,11 @@ const Home = () => {
   }
 
   //animate header letters
-  useEffect( () =>{
-     setTimeout(() =>{
+  useEffect(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
-    },4000)
-  },[] )
-
+    }, 4000)
+  }, [])
 
   return (
     <>
@@ -77,7 +76,7 @@ const Home = () => {
               idx={15}
             />
             <br />
-            <span className='jobtitle'>
+            <span className="jobtitle">
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}

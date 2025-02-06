@@ -51,6 +51,138 @@ textarea {
   animation-fill-mode: forwards;
 }
 
-.component-container{
-  // margin-top: 500px;
-}
+
+  :root {
+    --main-header-color: rgb(15, 171, 116);
+    --paragraph-color: #fff;
+    --background-color: #221a15;
+    --background-color-reformat: #B5A28C;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--background-color) !important;
+    font-size: 1.3125rem;
+    line-height: 1.6rem;
+    // width: 100vw;
+    // max-width: 100vw;
+    margin-bottom: 10%;
+  }
+  .page {
+    // border: 1px solid red;
+    // overflow: scroll;
+    width: min(90%, 70em);
+    // position: absolute;
+    margin: auto;
+    // border: 1px solid red;
+  }
+  
+  .top-tags {
+    bottom: auto;
+    top: 5%;
+  }
+  
+  .tags {
+    color: var(--main-header-color);
+    opacity: 0.6;
+    // position: absolute;
+    bottom: 0;
+    left: 12%;
+    font-size: 18px;
+    font-family: 'La Belle Aurore', cursive;
+  }
+  
+  h1 {
+    color: var(--main-header-color);
+    margin-bottom: 1em;
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: 'American Typewriter';
+  }
+  p {
+    color: var(--paragraph-color);
+  }
+  
+  .components {
+    margin-top: 20em;
+    .home{
+      margin-bottom: 5em;
+    }
+  }
+  
+  .container {
+    // margin-top: 2em;
+    will-change: contents;
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+  
+  .button-cube {
+    border: none;
+  }
+  
+  .scroll-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MyApp {
+    .music-content {
+      z-index: 99;
+      position: fixed;
+      margin-top: 1em;
+      margin-left: 1em;
+      border-radius: 10px;
+      background-color: #1d1c1c;
+      -webkit-backface-visibility: hidden;
+      h1 {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: 'American Typewriter';
+      }
+      p {
+        font-weight: 600;
+      }
+      p,
+      button {
+        padding: 0.12em;
+        font-size: 1.8rem;
+        background-color: initial;
+        border: none;
+        margin-top: -20px;
+      }
+      p,
+      button,
+      h1 {
+        display: inline;
+      }
+    }
+    .music-off-color {
+      color: rgb(239, 4, 4);
+    }
+    .music-on-color {
+      color: var(--main-header-color);
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    body{
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  
+
+

@@ -1,11 +1,11 @@
 import './index.scss'
 import './cube.scss'
-import Home from '../Home'
+import Home from '../V1.0/Home'
 import About from '../About'
 import Projects from '../Projects'
-import Blogs from '../Blogs'
-import Contact from '../Contact'
-import Sidebar from '../Sidebar'
+import Blogs from '../V1.0/Blogs'
+import Contact from '../V1.0/Contact'
+import Sidebar from '../V1.0/Sidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
@@ -43,13 +43,12 @@ const Layout = () => {
     }
   }
 
-  const turnMusicOff = () =>{
-    if(onOff === 'ON'){
+  const turnMusicOff = () => {
+    if (onOff === 'ON') {
       setOnOff('OFF')
       setMusicDiv('music-off-color')
       song.pause()
-    }
-    else{
+    } else {
       console.log('music is off')
     }
   }
@@ -134,7 +133,7 @@ const Layout = () => {
         </Slide>
         <Slide triggerOnce direction="left" duration={1500}>
           <div className="components">
-          <Projects turnMusicOff={turnMusicOff} />
+            <Projects turnMusicOff={turnMusicOff} />
           </div>
         </Slide>
         <Slide triggerOnce direction="left" duration={1500}>
