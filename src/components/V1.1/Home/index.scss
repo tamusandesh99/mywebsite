@@ -1,7 +1,38 @@
-.main-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    background-color: var(--background-color-reformat);
+.main-container-home {
+  margin: auto;
+  //   border: 1px solid yellow;
+  width: min(90%, 70em);
+  border-radius: 10px;
+
+  .top-sub-container {
+    .name {
+      border: 1px solid #27130c;
+      border-radius: 10px 10px 0px 0px;
+      height: 10vh;
+      background-color: #27130c;
+      h1 {
+        color: white;
+        margin: 0.5em 1rem 2rem 1rem;
+        font-size: 4rem;
+      }
+    }
+
+    .empty-background {
+      background-color: #936d54;
+      height: 10vh;
+    }
+  }
+
+  .bottom-sub-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    .about-me{
+        img{
+            width: 5em;
+        }
+        .about-me-bio{
+            display: flex;
+        }
+    }
+  }
 }

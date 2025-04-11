@@ -1,0 +1,11 @@
+.main-container-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  border: 1px solid red;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
