@@ -1,14 +1,14 @@
 .main-container-home {
   margin: auto;
   //   border: 1px solid yellow;
-  width: min(90%, 70em);
+  width: min(90%, 65em);
   border-radius: 10px;
 
   .top-sub-container {
     .name {
       border: 1px solid #27130c;
       border-radius: 10px 10px 0px 0px;
-      height: 10vh;
+      height: 15vh;
       background-color: #27130c;
       h1 {
         color: white;
@@ -19,20 +19,56 @@
 
     .empty-background {
       background-color: #936d54;
-      height: 10vh;
+      height: 15vh;
     }
   }
 
-  .bottom-sub-container{
+  .bottom-sub-container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    .about-me{
-        img{
-            width: 5em;
+
+    h2 {
+      color: white;
+      margin: 1em;
+      font-size: 2rem;
+    }
+
+    .bottom {
+      // height: 20em;
+      border: 1px solid yellow;
+      padding: 1em;
+      max-height: 25vh;
+    }
+    .about-me {
+      background-color: #6e4835;
+
+      img {
+        width: 10em;
+      }
+      .about-me-bio {
+        display: flex;
+
+      }
+    }
+
+    .skills {
+      background-color: #e9ddce;
+    }
+
+    .projects {
+      background-color: #40271d;
+
+      .project-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .project {
+          img {
+            max-width: 10em;
+          }
         }
-        .about-me-bio{
-            display: flex;
-        }
+      }
     }
   }
 }
